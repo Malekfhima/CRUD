@@ -1,0 +1,47 @@
+:root {
+  --color-primary: #d1b689;
+  --color-accent: #c15747;
+  --neutral-100: #ffffff;
+  --neutral-200: #f5f5f5;
+  --neutral-500: #777777;
+  --neutral-800: #222222;
+}
+
+/* Responsive grid for item list when rendered on web */
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card:focus {
+  outline: 3px solid var(--color-primary);
+}
+
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+.card .cardBody {
+  padding: 12px;
+}
+.card .cardTitle {
+  font-weight: 700;
+  color: var(--neutral-800);
+}
+.card .cardPrice {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+.actionButton {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+}

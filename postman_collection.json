@@ -1,0 +1,10 @@
+{
+  "info": { "name": "Items API", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json" },
+  "item": [
+    { "name": "Get Items", "request": { "method": "GET", "url": "{{baseUrl}}/api/items" } },
+    { "name": "Create Item", "request": { "method": "POST", "url": "{{baseUrl}}/api/items", "body": { "mode": "raw", "raw": "{\n  \"title\": \"New\",\n  \"price\": 9.99\n}" } } },
+    { "name": "Get Item", "request": { "method": "GET", "url": "{{baseUrl}}/api/items/:id" } },
+    { "name": "Update Item", "request": { "method": "PUT", "url": "{{baseUrl}}/api/items/:id" } },
+    { "name": "Delete Item", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/items/:id" } }
+  ]
+}

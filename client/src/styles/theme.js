@@ -3,13 +3,15 @@ import { StyleSheet } from "react-native";
 
 export const theme = {
   colors: {
-    primary: "#d1b689",
-    accent: "#c15747",
+    primary: "#2b6cb0", // calm blue
+    accent: "#d66a4f",
     neutral: {
+      50: "#fbfcfd",
       100: "#ffffff",
-      200: "#f5f5f5",
-      500: "#777777",
-      800: "#222222",
+      200: "#f3f6f9",
+      400: "#bfc8d6",
+      500: "#6b7280",
+      800: "#111827",
     },
   },
   spacing: {
@@ -20,13 +22,13 @@ export const theme = {
     xl: 32,
   },
   typography: {
-    h1: 22,
+    h1: 20,
     h2: 18,
     p: 14,
-    price: 16,
+    price: 15,
   },
   radii: {
-    sm: 6,
+    sm: 8,
     md: 12,
     lg: 16,
   },
